@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Netflix</title>
+	<link rel="icon" type="image/x-icon" href="Netflix Icon.png">
+</head>
+<body class="main">
+	<style type="text/css">
+		body{
+			background-image: url('Netflix BG.jpeg');
+			background-repeat: none;
+			background-attachment: fixed;
+			background-position: cover;
+			font-family: Bebas Neue;
+		}
+		.back{
+			background-color: gray;
+			opacity: 0.85;
+			position: absolute;
+			width: 30%;
+			height: auto;
+			left: 35%;
+			top: 70px;
+			padding: 20px;
+		}
+		.main{
+			position: relative;
+		}
+		div{
+			font-family: Bebas Neue;
+			font-size: 25px;
+			opacity: 1;
+		}
+		input{
+			width: 100% ;
+			height: 30px;		
+		}
+		.checkbox{
+			width: 20px;
+		}
+		.gender{
+			width: 20px;
+		}
+		label{
+			display: inline;
+			font-size: 20px;
+		}
+		@font-face{
+			font-family: Bebas Neue;
+			src: url(BebasNeue-Regular.otf);
+		}
+		.head{
+			position: relative;
+			color: red;
+			text-align: center;
+			font-size: 50px;
+			margin: 20px;
+		}
+		.feedback{
+			position: relative;
+			width: 100%;
+		}
+		.submit{
+			position: relative;
+			width: 100px;
+			background-color: red;
+			color: white;
+			border-radius: 20px;
+			border: none;
+			left: 35%;
+		}
+	</style>
+	<div class="head">Netflix</div>
+	<div class="back">
+		<form>
+			<label for="name">Your Name</label><br>
+			<input type="text" name="name" id="name" placeholder="Your Name Here">
+			<label for="surname">Your Surname</label><br>
+			<input type="text" name="surname" id="surname" placeholder="Your Surname Here">
+			<label for="name">Your Email</label><br>
+			<input type="text" name="email" id="email" placeholder="Your Email Here"><br>
+			<div style="padding-top: 10px;">Movie Types</div>	
+			<input type="checkbox" name="comedy" id="comedy" class="checkbox">
+			<label for="comedy">Comedy</label><br>
+			<input type="checkbox" name="drama" id="drama" class="checkbox">
+			<label for="drama">Drama</label><br>
+			<input type="checkbox" name="romance" id="romance" class="checkbox">
+			<label for="romance">Romance</label><br>
+			<div style="padding-top: 10px;">Gender</div>	
+			<input type="radio" name="gender" id="man" class="gender">
+			<label for="man">Man</label><br>
+			<input type="radio" name="gender" id="woman" class="gender">
+			<label for="woman">Woman</label><br>
+			<input type="radio" name="gender" id="other" class="gender">
+			<label for="other">Other</label>
+			<div style="padding-top: 10px;">Feedback</div>
+			<textarea class="feedback">Please give us a review</textarea>
+			<input type="submit" value="Sign Up" class="submit">
+		</form>		
+	</div>
+	<br>
+</body>
+</html>
